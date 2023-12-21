@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FizzBuzz</title>
+</head>
+<body>
+
+<script>
+function compararNumeros() {
+  for (let numeroAComparar = 1; numeroAComparar <= 1000; numeroAComparar++) {
+    if (numeroAComparar % 3 === 0 && numeroAComparar % 5 === 0) {
+      console.log("FizzBuzz");
+    } else if (numeroAComparar % 3 === 0) {
+      console.log("Fizz");
+    } else if (numeroAComparar % 5 === 0) {
+      console.log("Buzz");
+    } else {
+      console.log(numeroAComparar);
+    }
+  }
+}
+
+// Llama a la función para ejecutarla
+compararNumeros();
+</script>
+
+</body>
+</html>
